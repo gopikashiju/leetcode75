@@ -1,0 +1,19 @@
+def merge(w1 , w2):
+    m=[]
+    i,j=0,0
+    while (i<len(w1) or j<len(w2)):
+       if (i< len(w1)):
+           m.append(w1[i])
+           i+=1
+
+       if (j< len(w2)):
+         m.append(w2[j])
+         j+=1
+    return m
+
+
+print("enter w1 and w2")
+w1=input()
+w2=input()
+r= merge(w1,w2)
+print(" merge string" , ''.join(r))
